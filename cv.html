@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kery Salazar</title>
+    <!-- Importación de Google Fonts para una tipografía limpia -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para los iconos de contacto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Variables de color y estilos generales */
+        :root {
+            --bg-sidebar: #d6d6d6;
+            --text-dark: #1a1a1a;
+            --text-gray: #4a4a4a;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Contenedor principal */
+        .cv-container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Columna Izquierda (Gris) */
+        .sidebar {
+            background-color: var(--bg-sidebar);
+            width: 35%;
+            padding: 40px 30px;
+            color: var(--text-dark);
+        }
+
+        .profile-img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border: 10px solid #000; /* Marco negro como en la foto */
+            margin-bottom: 30px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 40px;
+        }
+
+        .sidebar-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .sidebar-content {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+        }
+
+        .contact-item i {
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        /* Columna Derecha (Blanca) */
+        .main-content {
+            width: 65%;
+            padding: 60px 50px;
+        }
+
+        .header-name {
+            margin-bottom: 50px;
+        }
+
+        .header-name h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .header-name p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .main-section {
+            margin-bottom: 35px;
+        }
+
+        .main-section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .edu-item {
+            margin-bottom: 15px;
+        }
+
+        .edu-item h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .edu-item span {
+            font-style: italic;
+            font-size: 0.85rem;
+            color: var(--text-gray);
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Responsivo para móviles */
+        @media (max-width: 600px) {
+            .cv-container {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+            <!-- Reemplaza 'foto.jpg' con tu imagen real -->
+            <img src="https://via.placeholder.com/300" alt="Kery Salazar" class="profile-img">
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Sobre Mí</h2>
+                <div class="sidebar-content">
+                    <p>Estudiante de preparatoria ICC (2024-2026)</p>
+                    <p>18 años de edad.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-title">Contacto</h2>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i> +52 868 422 7406
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i> kerysalazar@hotmail.com
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i> Calle Cualquiera 123, Cualquier lugar.
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+            <header class="header-name">
+                <h1>Kery Salazar</h1>
+                <p>Estudiante</p>
+            </header>
+
+            <section class="main-section">
+                <h2>Educación</h2>
+                <div class="edu-item">
+                    <h3>Wainwright Elementary en Houston</h3>
+                    <span>1er-4to grado</span>
+                </div>
+                <div class="edu-item">
+                    <h3>Colegio San Jorge (Primaria y Secundaria)</h3>
+                    <span>2016-2020</span>
+                </div>
+                <div class="edu-item">
+                    <h3>Saint George Prep School</h3>
+                    <span>2020-2024</span>
+                </div>
+                <div class="edu-item">
+                    <h3>Preparatoria Instituto Cultural Canadiense</h3>
+                    <span>2024-2026</span>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <h2>Idioma</h2>
+                <div class="sidebar-content">
+                    <p>Inglés 85%</p>
+                    <p>Español nativo.</p>
+                    <p>Francés 40%</p>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <h2>Habilidades</h2>
+                <div class="skill-item">
+                    <p>Adaptación adecuada en el trabajo en equipo.</p>
+                </div>
+                <div class="skill-item">
+                    <p>Enfoque en la satisfacción del usuario.</p>
+                </div>
+                <div class="skill-item">
+                    <p>Rápido aprendizaje en el uso de diversos tipos de software.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
