@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Kery Salazar</title>
-    <!-- Fuente Montserrat para coincidir con el diseño -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Iconos para la sección de contacto -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
         :root {
             --bg-sidebar: #d6d6d6;
@@ -33,24 +30,23 @@
         .cv-container {
             background-color: #fff;
             width: 100%;
-            max-width: 800px;
+            max-width: 850px;
             display: flex;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        /* BARRA LATERAL (GRIS) */
         .sidebar {
             background-color: var(--bg-sidebar);
             width: 38%;
-            padding: 40px 30px;
+            padding: 40px 35px;
             color: var(--text-dark);
         }
 
         .profile-img-container {
             width: 100%;
-            border: 12px solid #000; /* Marco negro grueso como en la foto */
+            border: 12px solid #000;
             background-color: #000;
-            margin-bottom: 40px;
+            margin-bottom: 45px;
             line-height: 0;
         }
 
@@ -61,7 +57,7 @@
         }
 
         .sidebar-section {
-            margin-bottom: 45px;
+            margin-bottom: 50px;
         }
 
         .sidebar-title {
@@ -73,7 +69,7 @@
         }
 
         .sidebar-content p {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             line-height: 1.6;
             margin-bottom: 5px;
         }
@@ -81,24 +77,28 @@
         .contact-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 15px;
-            font-size: 0.85rem;
-            line-height: 1.4;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
         }
 
         .contact-item i {
-            width: 25px;
+            width: 30px;
+            font-size: 1.1rem;
             margin-top: 3px;
         }
 
-        /* CONTENIDO PRINCIPAL (BLANCO) */
+        .contact-text {
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
         .main-content {
             width: 62%;
-            padding: 60px 45px;
+            padding: 60px 50px;
         }
 
         .header-name {
-            margin-bottom: 55px;
+            margin-bottom: 60px;
         }
 
         .header-name h1 {
@@ -117,7 +117,7 @@
         }
 
         .main-section {
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
 
         .main-section h2 {
@@ -126,11 +126,10 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 20px;
-            border-bottom: 1px solid transparent; /* Para mantener alineación */
         }
 
         .item {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
         .item h3 {
@@ -151,27 +150,19 @@
             margin-bottom: 25px;
             font-size: 0.95rem;
             line-height: 1.6;
-            color: var(--text-dark);
         }
 
-        /* Adaptación para móviles */
-        @media (max-width: 650px) {
-            .cv-container {
-                flex-direction: column;
-            }
-            .sidebar, .main-content {
-                width: 100%;
-            }
+        @media (max-width: 700px) {
+            .cv-container { flex-direction: column; }
+            .sidebar, .main-content { width: 100%; }
         }
     </style>
 </head>
 <body>
 
     <div class="cv-container">
-        <!-- BARRA LATERAL -->
         <aside class="sidebar">
             <div class="profile-img-container">
-                <!-- Se ha configurado el nombre de tu archivo: fotocv.png -->
                 <img src="fotocv.png" alt="Kery Salazar" class="profile-img">
             </div>
 
@@ -186,19 +177,25 @@
             <div class="sidebar-section">
                 <h2 class="sidebar-title">Contacto</h2>
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i> +52 868 422 7406
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="contact-text">+52 868 422 7406</div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i> kerysalazar@hotmail.com
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-text">kerysalazar@hotmail.com</div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i> 
-                    Calle Vicente Villada #314 Centro Ixtlahuaca de Rayón C.p. 50740
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-text">
+                        Calle Vicente Villada<br>
+                        #314 Centro<br>
+                        Ixtlahuaca de Rayón<br>
+                        C.p. 50740
+                    </div>
                 </div>
             </div>
         </aside>
 
-        <!-- CONTENIDO PRINCIPAL -->
         <main class="main-content">
             <header class="header-name">
                 <h1>Kery Salazar</h1>
