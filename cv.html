@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Kery Salazar</title>
-    <!-- Importación de Google Fonts para una tipografía limpia -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome para los iconos de contacto -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* Variables de color y estilos generales */
         :root {
             --bg-sidebar: #d6d6d6;
             --text-dark: #1a1a1a;
@@ -31,7 +28,6 @@
             padding: 20px;
         }
 
-        /* Contenedor principal */
         .cv-container {
             background-color: #fff;
             width: 100%;
@@ -40,7 +36,6 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
 
-        /* Columna Izquierda (Gris) */
         .sidebar {
             background-color: var(--bg-sidebar);
             width: 35%;
@@ -52,7 +47,7 @@
             width: 100%;
             aspect-ratio: 1/1;
             object-fit: cover;
-            border: 10px solid #000; /* Marco negro como en la foto */
+            border: 10px solid #000; 
             margin-bottom: 30px;
         }
 
@@ -85,8 +80,7 @@
             margin-right: 10px;
         }
 
-        /* Columna Derecha (Blanca) */
-        .main-content {
+       .main-content {
             width: 65%;
             padding: 60px 50px;
         }
@@ -142,7 +136,7 @@
             line-height: 1.5;
         }
 
-        /* Responsivo para móviles */
+
         @media (max-width: 600px) {
             .cv-container {
                 flex-direction: column;
@@ -156,9 +150,8 @@
 <body>
 
     <div class="cv-container">
-        <!-- BARRA LATERAL -->
+
         <aside class="sidebar">
-            <!-- Reemplaza 'foto.jpg' con tu imagen real -->
             <img src="https://via.placeholder.com/300" alt="Kery Salazar" class="profile-img">
 
             <div class="sidebar-section">
@@ -182,8 +175,7 @@
                 </div>
             </div>
         </aside>
-
-        <!-- CONTENIDO PRINCIPAL -->
+        
         <main class="main-content">
             <header class="header-name">
                 <h1>Kery Salazar</h1>
